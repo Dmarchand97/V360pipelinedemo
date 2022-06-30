@@ -1,0 +1,24 @@
+[2022-06-30 16:38:17,288] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: dag_demo.print_line scheduled__2022-01-01T01:32:00+00:00 [queued]>
+[2022-06-30 16:38:17,295] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: dag_demo.print_line scheduled__2022-01-01T01:32:00+00:00 [queued]>
+[2022-06-30 16:38:17,296] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-30 16:38:17,297] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2022-06-30 16:38:17,298] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-30 16:38:17,307] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): print_line> on 2022-01-01 01:32:00+00:00
+[2022-06-30 16:38:17,311] {standard_task_runner.py:52} INFO - Started process 1862 to run task
+[2022-06-30 16:38:17,314] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'dag_demo', 'print_line', 'scheduled__2022-01-01T01:32:00+00:00', '--job-id', '1017', '--raw', '--subdir', 'DAGS_FOLDER/Demo_Dag.py', '--cfg-path', '/tmp/tmpnsur5e0w', '--error-file', '/tmp/tmp6n5ytopm']
+[2022-06-30 16:38:17,315] {standard_task_runner.py:80} INFO - Job 1017: Subtask print_line
+[2022-06-30 16:38:17,357] {task_command.py:370} INFO - Running <TaskInstance: dag_demo.print_line scheduled__2022-01-01T01:32:00+00:00 [running]> on host 43f8d36cfb0f
+[2022-06-30 16:38:17,398] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=dag_demo
+AIRFLOW_CTX_TASK_ID=print_line
+AIRFLOW_CTX_EXECUTION_DATE=2022-01-01T01:32:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-01-01T01:32:00+00:00
+[2022-06-30 16:38:17,400] {logging_mixin.py:115} INFO - Hello World
+[2022-06-30 16:38:17,401] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-30 16:38:17,409] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=dag_demo, task_id=print_line, execution_date=20220101T013200, start_date=20220630T163817, end_date=20220630T163817
+[2022-06-30 16:38:17,448] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-30 16:38:17,466] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

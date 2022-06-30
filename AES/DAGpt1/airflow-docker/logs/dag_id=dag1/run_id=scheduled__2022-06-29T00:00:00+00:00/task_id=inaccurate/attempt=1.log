@@ -1,0 +1,28 @@
+[2022-06-30 00:02:30,491] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: dag1.inaccurate scheduled__2022-06-29T00:00:00+00:00 [queued]>
+[2022-06-30 00:02:30,499] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: dag1.inaccurate scheduled__2022-06-29T00:00:00+00:00 [queued]>
+[2022-06-30 00:02:30,500] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-30 00:02:30,501] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-06-30 00:02:30,502] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-30 00:02:30,515] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): inaccurate> on 2022-06-29 00:00:00+00:00
+[2022-06-30 00:02:30,518] {standard_task_runner.py:52} INFO - Started process 16112 to run task
+[2022-06-30 00:02:30,521] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'dag1', 'inaccurate', 'scheduled__2022-06-29T00:00:00+00:00', '--job-id', '918', '--raw', '--subdir', 'DAGS_FOLDER/dag1.py', '--cfg-path', '/tmp/tmpf207f2_s', '--error-file', '/tmp/tmp_nudi9fl']
+[2022-06-30 00:02:30,524] {standard_task_runner.py:80} INFO - Job 918: Subtask inaccurate
+[2022-06-30 00:02:30,569] {task_command.py:370} INFO - Running <TaskInstance: dag1.inaccurate scheduled__2022-06-29T00:00:00+00:00 [running]> on host 43f8d36cfb0f
+[2022-06-30 00:02:30,614] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=dag1
+AIRFLOW_CTX_TASK_ID=inaccurate
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-29T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-29T00:00:00+00:00
+[2022-06-30 00:02:30,616] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-06-30 00:02:30,617] {subprocess.py:74} INFO - Running command: ['bash', '-c', "echo 'inaccurate'"]
+[2022-06-30 00:02:30,625] {subprocess.py:85} INFO - Output:
+[2022-06-30 00:02:30,628] {subprocess.py:92} INFO - inaccurate
+[2022-06-30 00:02:30,628] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-06-30 00:02:30,650] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=dag1, task_id=inaccurate, execution_date=20220629T000000, start_date=20220630T000230, end_date=20220630T000230
+[2022-06-30 00:02:30,695] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-30 00:02:30,722] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,25 @@
+[2022-06-27 13:30:34,572] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: dag1.best_model scheduled__2022-01-05T00:00:00+00:00 [queued]>
+[2022-06-27 13:30:34,645] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: dag1.best_model scheduled__2022-01-05T00:00:00+00:00 [queued]>
+[2022-06-27 13:30:34,647] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-27 13:30:34,648] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-06-27 13:30:34,649] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-27 13:30:34,746] {taskinstance.py:1377} INFO - Executing <Task(BranchPythonOperator): best_model> on 2022-01-05 00:00:00+00:00
+[2022-06-27 13:30:34,778] {standard_task_runner.py:52} INFO - Started process 56733 to run task
+[2022-06-27 13:30:34,819] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'dag1', 'best_model', 'scheduled__2022-01-05T00:00:00+00:00', '--job-id', '66', '--raw', '--subdir', 'DAGS_FOLDER/dag1.py', '--cfg-path', '/tmp/tmpblhi0f6_', '--error-file', '/tmp/tmpu8oahw3a']
+[2022-06-27 13:30:34,823] {standard_task_runner.py:80} INFO - Job 66: Subtask best_model
+[2022-06-27 13:30:35,081] {task_command.py:370} INFO - Running <TaskInstance: dag1.best_model scheduled__2022-01-05T00:00:00+00:00 [running]> on host 43f8d36cfb0f
+[2022-06-27 13:30:35,324] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=dag1
+AIRFLOW_CTX_TASK_ID=best_model
+AIRFLOW_CTX_EXECUTION_DATE=2022-01-05T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-01-05T00:00:00+00:00
+[2022-06-27 13:30:35,354] {python.py:173} INFO - Done. Returned value was: accurate
+[2022-06-27 13:30:35,356] {skipmixin.py:140} INFO - Following branch accurate
+[2022-06-27 13:30:35,361] {skipmixin.py:175} INFO - Skipping tasks ['inaccurate']
+[2022-06-27 13:30:35,539] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=dag1, task_id=best_model, execution_date=20220105T000000, start_date=20220627T133034, end_date=20220627T133035
+[2022-06-27 13:30:35,732] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-27 13:30:35,876] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
